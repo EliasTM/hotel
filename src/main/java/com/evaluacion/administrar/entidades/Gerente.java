@@ -1,0 +1,66 @@
+package com.evaluacion.administrar.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Gerente {
+
+    @Id
+    private int idGerente;
+    private int dni;
+    private String nombre;
+    private String apellido;
+    private int idRol;
+
+    public int getIdGerente() {
+        return idGerente;
+    }
+
+    public void setIdGerente(int idGerente) {
+        this.idGerente = idGerente;
+    }
+
+    public int getDni() {
+        return dni;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getIdRol() {
+        return idRol;
+    }
+
+    public void setIdRol(int idRol) {
+        this.idRol = idRol;
+    }
+
+    public Gerente(int idGerente, int dni, String nombre, String apellido, int idRol) {
+        this.idGerente = idGerente;
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.idRol = idRol;
+    }
+
+    public Gerente() {
+    }
+}
